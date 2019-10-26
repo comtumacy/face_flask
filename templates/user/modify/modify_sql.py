@@ -4,7 +4,7 @@ import sys
 
 # 修改个人数据
 def register_sql(Sno, username, password, Sname, Ssex, Sclass, Sclassno, Birth, Saddress, Sdept, Stime):
-    conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='LuoHongSheng336!', db='face',
+    conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',
                            charset='utf8')
     cursor = conn.cursor()
     sql1 = "UPDATE Student SET username='{}', password='{}', Sname='{}', Ssex='{}', Sclass='{}', Sclassno='{}', Birth='{}', Saddress='{}', Sdept='{}', Stime='{}' WHERE Sno={};".format(username, password, Sname, Ssex, Sclass, Sclassno, Birth, Saddress, Sdept, Stime, Sno)

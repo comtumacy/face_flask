@@ -1,5 +1,5 @@
 from flask import Blueprint, make_response
-from Face_attendance_system.src.components.user.register.verification_code.get_verification_code_base64 import get_verification_code_base64
+from templates.user.register.verification_code.get_verification_code_base64 import get_verification_code_base64
 from redis import StrictRedis
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 import json

@@ -2,7 +2,7 @@ import pymysql
 
 
 def login_sql(tno, username, password):
-    conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='LuoHongSheng336!', db='face',
+    conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',
                            charset='utf8')
     cursor = conn.cursor()
     sql1 = "SELECT `username`,`password` FROM teacher WHERE `Tno` = {};".format(tno)
