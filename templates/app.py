@@ -27,7 +27,6 @@ CORS(app, resources=r'/*')
 
 # 注册蓝图,蓝图添加链接前缀
 # 用户接口
-# test
 app.register_blueprint(login, url_prefix='/user')  # 学生登录
 app.register_blueprint(login_teacher, url_prefix='/user')  # 老师登录
 app.register_blueprint(out_login, url_prefix='/user')  # 退出登录
