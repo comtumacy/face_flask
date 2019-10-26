@@ -3,11 +3,11 @@ import sys
 
 
 # 修改个人数据
-def register_sql(Sno, username, password, Sname, Ssex, Sclass, Birth, Saddress, Sdept, Stime):
+def register_sql(Sno, username, password, Sname, Ssex, Sclass, Sclassno, Birth, Saddress, Sdept, Stime):
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='LuoHongSheng336!', db='face',
                            charset='utf8')
     cursor = conn.cursor()
-    sql1 = "UPDATE Student SET username='{}', password='{}', Sname='{}', Ssex='{}', Sclass='{}', Birth='{}', Saddress='{}', Sdept='{}', Stime='{}' WHERE Sno={};".format(username, password, Sname, Ssex, Sclass, Birth, Saddress, Sdept, Stime, Sno)
+    sql1 = "UPDATE Student SET username='{}', password='{}', Sname='{}', Ssex='{}', Sclass='{}', Sclassno='{}', Birth='{}', Saddress='{}', Sdept='{}', Stime='{}' WHERE Sno={};".format(username, password, Sname, Ssex, Sclass, Sclassno, Birth, Saddress, Sdept, Stime, Sno)
     sql2 = "SELECT * FROM Student WHERE Sno={};".format(Sno)
     try:
         # 依次提交查询语句

@@ -2,12 +2,12 @@ import pymysql
 import sys
 
 
-def register_sql(Sno, username, password, Sname, Ssex, Sclass, Sdept):
+def register_sql(Sno, username, password, Sname, Ssex, Sclass, Sclassno, Sdept):
     status = 0
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='LuoHongSheng336!', db='face',
                            charset='utf8')
     cursor = conn.cursor()
-    sql1 = "INSERT INTO Student ( Sno, username, password, Sname, Ssex, Sclass, Sdept ) VALUES ( {}, '{}', '{}', '{}', '{}', '{}', '{}');".format(Sno, username, password, Sname, Ssex, Sclass, Sdept)
+    sql1 = "INSERT INTO Student ( Sno, username, password, Sname, Ssex, Sclass, Sclassno, Sdept ) VALUES ( {}, '{}', '{}', '{}', '{}', '{}', '{}', '{}');".format(Sno, username, password, Sname, Ssex, Sclass, Sclassno, Sdept)
     try:
         cursor.execute(sql1)
         conn.commit()

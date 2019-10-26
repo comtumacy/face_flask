@@ -34,7 +34,7 @@ def register_fun():
         # 设置HTTP状态码
         response.status_code = 401
     else:
-        status = register_sql(data['Sno'], data['username'], data['password'], data['Sname'], data['Ssex'], data['Sclass'], data['Sdept'])
+        status = register_sql(data['Sno'], data['username'], data['password'], data['Sname'], data['Ssex'], data['Sclass'], data['Sclassno'], data['Sdept'])
         if status == 1:
             post_data = {"info": "注册成功"}
             post_data = json.dumps(post_data)
