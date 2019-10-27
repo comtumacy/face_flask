@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca039762-5d15-4547-839e-2f9dd2e526ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/public_api/get_class/get_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/public_api/get_class/get_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/public_api/get_class/get_class_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/public_api/get_class/get_class_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/public_api/get_college/get_college.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/public_api/get_college/get_college.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/public_api/get_college/get_college_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/public_api/get_college/get_college_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/login/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/login/login_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login/login_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/login/login_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login/login_teacher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/login/login_teacher_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login/login_teacher_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/login/out_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login/out_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/modify/modify.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/modify/modify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/modify/modify_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/modify/modify_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/modify/modify_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/modify/modify_teacher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/modify/modify_teacher_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/modify/modify_teacher_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/register/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/register/register_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/register_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/register/verification_code/get_verification_code_base64.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/verification_code/get_verification_code_base64.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/register/verification_code/verification_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/verification_code/verification_code.py" afterDir="false" />
-    </list>
+    <list default="true" id="ca039762-5d15-4547-839e-2f9dd2e526ff" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/templates/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
-              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -111,6 +91,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,12 +163,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python源程序" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -266,16 +246,18 @@
       <workItem from="1572071447932" duration="463000" />
       <workItem from="1572096905070" duration="4161000" />
       <workItem from="1572153565223" duration="8205000" />
+      <workItem from="1572189017121" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17952000" />
+    <option name="totallyTimeSpent" value="18550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13965885" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -455,7 +437,7 @@
     <entry file="file://$PROJECT_DIR$/templates/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
