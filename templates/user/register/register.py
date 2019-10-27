@@ -1,3 +1,4 @@
+# coding=utf-8
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
 from templates.user.register.register_sql import register_sql

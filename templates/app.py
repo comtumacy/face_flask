@@ -1,3 +1,4 @@
+# coding=utf-8
 from flask import Flask, current_app
 from flask_cors import CORS
 from redis import StrictRedis

@@ -1,3 +1,4 @@
+# coding=utf-8
 from flask import Blueprint, make_response
 from templates.public_api.get_college.get_college_sql import get_college_sql
 import json

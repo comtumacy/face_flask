@@ -1,3 +1,4 @@
+# coding=utf-8
 from flask import Blueprint, request, make_response
 from redis import StrictRedis
 import json
