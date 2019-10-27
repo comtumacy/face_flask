@@ -5,7 +5,7 @@ def get_class_sql(college):
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',
                            charset='utf8')
     cursor = conn.cursor()
-    sql1 = "SELECT class, classno FROM class WHERE college = '{}';".format(college)
+    sql1 = "SELECT class, classno FROM class WHERE college = '{}' ORDER BY class asc;".format(college)
     sql2 = "SHOW full COLUMNS FROM college"
     cursor.execute(sql1)
     conn.commit()

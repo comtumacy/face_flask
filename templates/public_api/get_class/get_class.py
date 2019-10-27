@@ -11,6 +11,7 @@ get_class = Blueprint("get_class", __name__)
 def get_class_fun():
     #  获取接收所选择的学院信息，转为dict格式
     get_data = request.json
+    print(get_data)
 
     data = get_class_sql(get_data['college'])
     #  返回的内容
