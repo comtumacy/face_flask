@@ -58,7 +58,7 @@ def login_teacher_fun():
             token = str(token, 'utf-8')
             redis.set(str(get_data['Tno']), token)
             redis.expire(str(get_data['Tno']), 3600)
-            response.headers = {'token': token}
+            response.headers = {'username': get_data['username'], 'token': token}
         #  返回的json格式设定
         response.content_type = 'application/json'
         #  设置HTTP状态码
