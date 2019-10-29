@@ -15,13 +15,14 @@ def get_student_info_fun():
     Sno = request.headers.get('Sno')
     token = request.headers.get('token')
 
-    # 获取code
+    # 获取token
     redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
     token_get = redis.get(Sno)
     token_get = str(token_get)
     token_get = token_get.replace("b'", "")
     token_get = token_get.replace("'", "")
 
+    # token失效
     if token != token_get:
         post_data = {'info': '登录失效，请重新登录'}
         #  返回的内容
