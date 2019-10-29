@@ -17,6 +17,7 @@ from templates.user.modify.modify import modify
 from templates.user.modify.modify_teacher import modify_teacher
 # student
 from templates.student.get_face.get_student_info import get_student_info
+from templates.student.get_face.get_photo import get_photo
 
 
 # 设置SECRET_KEY为随机数
@@ -48,6 +49,7 @@ app.register_blueprint(modify, url_prefix='/user')  # 修改学生个人信息
 app.register_blueprint(modify_teacher, url_prefix='/user')  # 修改老师个人信息
 # 学生接口
 app.register_blueprint(get_student_info, url_prefix='/student')  # 获取当前学生的个人信息
+app.register_blueprint(get_photo, url_prefix='/student')  # 获取照片
 
 
 if __name__ == '__main__':
