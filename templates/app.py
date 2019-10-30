@@ -51,7 +51,7 @@ app.register_blueprint(modify_teacher, url_prefix='/user')  # 修改老师个人
 # 学生接口
 app.register_blueprint(get_student_info, url_prefix='/student')  # 获取当前学生的个人信息
 app.register_blueprint(get_photo, url_prefix='/student')  # 保存照片
-app.register_blueprint(features_train_person, url_prefix='/student')  # 获取人脸特征
+app.register_blueprint(features_train_person, url_prefix='/student')  # 获取保存人脸特征
 
 
 if __name__ == '__main__':

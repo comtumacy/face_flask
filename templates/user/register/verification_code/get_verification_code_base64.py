@@ -21,6 +21,11 @@ def get_random_str():
     random_low_alpha = chr(random.randint(97, 122))
     random_upper_alpha = chr(random.randint(65, 90))
     random_text = random.choice([random_num, random_low_alpha, random_upper_alpha])
+    # 判断是否为字母
+    if random_text.isalpha():
+        if random_text.isupper():
+            random_text = random_text.lower()
+
     return random_text
 
 
