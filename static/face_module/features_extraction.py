@@ -5,8 +5,8 @@ import dlib
 from skimage import io
 import numpy as np
 
-# 要读取人脸图像文件的路径
-path_images_from_camera = "data/data_faces_from_camera/"
+# # 要读取人脸图像文件的路径
+# path_images_from_camera = "data/data_faces_from_camera/"
 
 # Dlib 正向人脸检测器
 # 功能：人脸检测画框
