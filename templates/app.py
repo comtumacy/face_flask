@@ -19,6 +19,7 @@ from templates.user.modify.modify_teacher import modify_teacher
 from templates.student.get_face.get_student_info import get_student_info
 from templates.student.get_face.get_photo import get_photo
 from templates.student.get_face.features_train_person import features_train_person
+from templates.student.get_face.find_features import find_features
 
 
 # 设置SECRET_KEY为随机数
@@ -52,6 +53,7 @@ app.register_blueprint(modify_teacher, url_prefix='/user')  # 修改老师个人
 app.register_blueprint(get_student_info, url_prefix='/student')  # 获取当前学生的个人信息
 app.register_blueprint(get_photo, url_prefix='/student')  # 保存照片
 app.register_blueprint(features_train_person, url_prefix='/student')  # 获取保存人脸特征
+app.register_blueprint(find_features, url_prefix='/student')  # 查询是否存在特征
 
 
 if __name__ == '__main__':

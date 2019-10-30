@@ -23,14 +23,9 @@ def return_euclidean_distance(feature_1, feature_2):
 # 处理存放所有人脸特征的 csv
 path_features_known_csv = "data/data_faces_from_camera/features_all.csv"
 csv_rd = pd.read_csv(path_features_known_csv, header=None)
-# 所有人脸的csv_rd特征： csv_rd如下
-#         0         1         2    ...       125       126       127
-# 0 -0.041625  0.128115  0.029375  ...  0.025229  0.149856 -0.011032
-# 1 -0.049821  0.138014  0.027642  ...  0.015095  0.148459 -0.008056
 
 
 # 用来存放所有录入人脸特征的数组
-# the array to save the features of faces in the database
 features_known_arr = []
 
 
@@ -60,7 +55,7 @@ img_gray = cv2.cvtColor(img_rd, cv2.COLOR_BGR2RGB)
 # 参数为检验对象和采样次数
 faces = detector(img_gray, 1)
 
-# 检测到人脸 when face detected
+# 检测到人脸
 if len(faces) != 0:
     # 获取当前捕获到的图像的所有人脸的特征，存储到 features_cap_arr
     features_cap_arr = []
@@ -71,7 +66,6 @@ if len(faces) != 0:
     # 遍历捕获到的图像中所有的人脸
     for k in range(len(faces)):
         # 对于某张人脸，遍历所有存储的人脸特征
-            # for every faces detected, compare the faces in the database
             e_distance_list = []
             for i in range(len(features_known_arr)):
                 # 如果 person_X 数据不为空
@@ -83,11 +77,10 @@ if len(faces) != 0:
                 else:
                     # 空数据 person_X
                     e_distance_list.append(999999999)
-            # Find the one with minimum e distance
             similar_person_num = e_distance_list.index(min(e_distance_list))
             print("Minimum e distance with person", int(similar_person_num)+1)
 
             if min(e_distance_list) < 0.4:
                 print("true")
             else:
-                print("Unknown person")
+                print("false")
