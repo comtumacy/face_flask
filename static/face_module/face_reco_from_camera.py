@@ -20,12 +20,18 @@ def return_euclidean_distance(feature_1, feature_2):
 
 
 # 处理存放所有人脸特征的 csv
-path_features_known_csv = "data/features_all.csv"
+path_features_known_csv = "data/data_faces_from_camera/features_all.csv"
 csv_rd = pd.read_csv(path_features_known_csv, header=None)
+# 所有人脸的csv_rd特征： csv_rd如下
+#         0         1         2    ...       125       126       127
+# 0 -0.041625  0.128115  0.029375  ...  0.025229  0.149856 -0.011032
+# 1 -0.049821  0.138014  0.027642  ...  0.015095  0.148459 -0.008056
+
 
 # 用来存放所有录入人脸特征的数组
 # the array to save the features of faces in the database
 features_known_arr = []
+
 
 # 读取已知人脸数据
 # print known faces
@@ -34,12 +40,16 @@ for i in range(csv_rd.shape[0]):
     for j in range(0, len(csv_rd.ix[i, :])):
         features_someone_arr.append(csv_rd.ix[i, :][j])
     features_known_arr.append(features_someone_arr)
-print("Faces in Database：", len(features_known_arr))
+# features_known_arr 为一个数组嵌套数组，每个对象保存着每个人的128个特征，此数组长度为人脸个数
+print("数据库中人脸个数为", len(features_known_arr))
+
 
 # Dlib 检测器和预测器
 # The detector and predictor will be used
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor('data/data_dlib/shape_predictor_68_face_landmarks.dat')
+
+
 
 # 创建 cv2 摄像头对象
 # cv2.VideoCapture(0) to use the default camera of PC,
@@ -79,7 +89,6 @@ while cap.isOpened():
         # 检测到人脸 when face detected
         if len(faces) != 0:
             # 获取当前捕获到的图像的所有人脸的特征，存储到 features_cap_arr
-            # get the features captured and save into features_cap_arr
             features_cap_arr = []
             for i in range(len(faces)):
                 shape = predictor(img_rd, faces[i])
