@@ -21,6 +21,3 @@ def get_student_features_sql(table_name):
         all_list.append(new_tup1_list)
 
     return all_list
-
-
-# get_student_info_sql('计算机科学与技术162')

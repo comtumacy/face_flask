@@ -40,7 +40,3 @@ def execute_scripts_from_file(filename, cursor, table_name):
     # 替换回SQL文件Table名初始值
     content_replacement_after('D:\\face\\templates\\teacher\\create_class\\sql\\Features.sql', table_name, 'Features')
     print('sql执行完成')
-
-
-# if __name__ == "__main__":
-#     connect_mysql('计算机科学与技术167')

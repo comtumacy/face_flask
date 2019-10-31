@@ -79,7 +79,3 @@ def return_features_mean_person(path_faces_person):
 
     # features_mean_person_np 某人照片特征，一个128长度的数组
     return features_mean_person_np
-
-
-# features_mean_person = return_features_mean_person("../photo/201606401243")
-# print("特征均值:", list(features_mean_person))

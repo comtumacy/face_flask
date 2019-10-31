@@ -17,4 +17,3 @@ def content_replacement_before(file, old_str, new_str):
             f2.write(line)
     os.remove(file)
     os.rename("%s.bak" % file, file)
-
