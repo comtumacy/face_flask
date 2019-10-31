@@ -22,6 +22,9 @@ def find_features_fun():
     token_get = token_get.replace("b'", "")
     token_get = token_get.replace("'", "")
 
+    #  获取接收的账号密码信息，转为dict格式
+    get_data = request.json
+
     # token失效
     if token != token_get:
         post_data = {'info': '登录失效，请重新登录'}
@@ -32,8 +35,8 @@ def find_features_fun():
         #  设置HTTP状态码
         response.status_code = 401
     else:
-        data = find_features_sql(Sno)
-        if len(data) == 0:
+        status = find_features_sql(Sno, get_data['class'] + get_data['classno'])
+        if status == 0:
             data = {'info': '无记录'}
             #  返回的内容
             response = make_response(json.dumps(data))

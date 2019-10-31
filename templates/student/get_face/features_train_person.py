@@ -23,6 +23,9 @@ def features_train_person_fun():
     token_get = token_get.replace("b'", "")
     token_get = token_get.replace("'", "")
 
+    #  获取接收的账号密码信息，转为dict格式
+    get_data = request.json
+
     # token失效
     if token != token_get:
         post_data = {'info': '登录失效，请重新登录'}
@@ -33,8 +36,9 @@ def features_train_person_fun():
         #  设置HTTP状态码
         response.status_code = 401
     else:
+        # linux (change this)
         result = return_features_mean_person('static/photo/201606401243')
-        status = features_sql(Sno, result)
+        status = features_sql(Sno, result, get_data['class'] + get_data['classno'])
         if status == 1:
             post_data = {'info': '128组人脸特征值训练保存成功'}
             #  返回的内容

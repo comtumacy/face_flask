@@ -50,7 +50,7 @@ def return_128d_features(path_img):
     return face_descriptor
 
 
-# 将文件夹中照片特征提取出来, 写入 CSV
+# 将文件夹中照片特征提取出来
 # path_faces_person为完整文件夹某人的照片文件夹路径
 def return_features_mean_person(path_faces_person):
     features_list_person = []

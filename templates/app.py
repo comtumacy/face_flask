@@ -3,6 +3,7 @@ from flask import Flask, current_app
 from flask_cors import CORS
 from redis import StrictRedis
 import os
+
 # 导入蓝图子模块
 # public
 from templates.public_api.get_college.get_college import get_college
@@ -64,4 +65,5 @@ app.register_blueprint(create_class, url_prefix='/teacher')  # 创建班级
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)  # 0.0.0.0用于外部域访问
+    app.run(host='0.0.0.0', port=5000, debug=False, processes=3)  # 0.0.0.0用于外部域访问
+

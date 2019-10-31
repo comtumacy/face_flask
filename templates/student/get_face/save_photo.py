@@ -4,7 +4,7 @@ import base64
 
 
 def save_photo(Sno, number, base64_str):
-    # 创建用户文件夹
+    # 创建用户文件夹(linux change)
     path = 'D:\\face\\static\\photo\\{}'.format(Sno)
     is_exists = os.path.exists(path)
     if is_exists:
