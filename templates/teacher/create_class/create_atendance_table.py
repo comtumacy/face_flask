@@ -6,16 +6,16 @@ from templates.teacher.create_class.content_replacement_after import content_rep
 
 # 读取SQL文件
 def get_sql_files():
-    sql_files = ["D:\\face\\templates\\teacher\\create_class\\sql\\Features.sql"]
+    sql_files = ["D:\\face\\templates\\teacher\\create_class\\sql\\attendance.sql"]
     return sql_files
 
 
 # 批量执行SQL文件
-def connect_mysql(table_name):
+def connect_mysql2(table_name):
     # 替换SQL文件Table名
-    content_replacement_before('D:\\face\\templates\\teacher\\create_class\\sql\\Features.sql', 'Features', table_name)
+    content_replacement_before('D:\\face\\templates\\teacher\\create_class\\sql\\attendance.sql', 'attendance', table_name)
     # 打开数据库连接
-    db = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='features',
+    db = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='attendance',
                            charset='utf8')
 
     # 使用 cursor() 方法创建一个游标对象 cursor
@@ -38,7 +38,7 @@ def execute_scripts_from_file(filename, cursor, table_name):
         except Exception as msg:
             print(msg)
     # 替换回SQL文件Table名初始值
-    content_replacement_after('D:\\face\\templates\\teacher\\create_class\\sql\\Features.sql', table_name, 'Features')
+    content_replacement_after('D:\\face\\templates\\teacher\\create_class\\sql\\attendance.sql', table_name, 'attendance')
     print('sql执行完成')
 
 

@@ -5,6 +5,7 @@ import json
 from templates.teacher.create_class.find_is_exist_sql import find_is_exist_sql
 from templates.teacher.create_class.insert_class_to_class import insert_class_to_class
 from templates.teacher.create_class.create_features_table import connect_mysql
+from templates.teacher.create_class.create_atendance_table import connect_mysql2
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念
@@ -41,8 +42,9 @@ def create_class_fun():
         if status == 1:
             insert_class_to_class(get_data['college'], get_data['class'], get_data['classno'])
             if status == 1:
-                connect_mysql(get_data['classno'])
-                post_data = {'info': '创建班级属性和创建班级面部特征表成功'}
+                connect_mysql(get_data['class'] + get_data['classno'])
+                connect_mysql2(get_data['class'] + get_data['classno'])
+                post_data = {'info': '创建班级属性、创建班级面部特征表和班级考勤记录表成功'}
                 #  返回的内容
                 response = make_response(json.dumps(post_data))
                 #  返回的json格式设定
