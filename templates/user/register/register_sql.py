@@ -3,6 +3,7 @@ import pymysql
 import sys
 
 
+# 注册在总学生表添加个人信息
 def register_sql(Sno, username, password, Sname, Ssex, Sclass, Sclassno, Sdept):
     status = 0
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',

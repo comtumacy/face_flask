@@ -2,6 +2,7 @@
 import pymysql
 
 
+# 查询老师总表是否有老师信息
 def login_sql(tno, username, password):
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',
                            charset='utf8')

@@ -3,7 +3,7 @@ import pymysql
 import sys
 
 
-# 修改个人数据
+# 在老师总表修改个人数据
 def register_sql(Tno, username, password):
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',
                            charset='utf8')

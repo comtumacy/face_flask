@@ -2,6 +2,7 @@
 import pymysql
 
 
+# 在人脸特征数据库中的班级表内查询该学生是否已经存在人脸数据（修改）
 def find_features_sql(Sno):
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',
                            charset='utf8')

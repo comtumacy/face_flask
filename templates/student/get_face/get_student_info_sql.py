@@ -2,6 +2,7 @@
 import pymysql
 
 
+# 查询学生总表的学生个人信息
 def get_student_info_sql(Sno):
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',
                            charset='utf8')

@@ -2,6 +2,7 @@
 import pymysql
 
 
+# 在总表查询是否存在个人信息
 def login_sql(sno, username, password):
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',
                            charset='utf8')

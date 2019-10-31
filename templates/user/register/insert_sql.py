@@ -2,6 +2,7 @@
 import pymysql
 
 
+# 为班级考勤表加上个人学号字段
 def insert_sql(Sno, class_name):
     status = 0
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='attendance',

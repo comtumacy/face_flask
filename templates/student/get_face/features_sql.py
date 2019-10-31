@@ -2,7 +2,7 @@
 import pymysql
 
 
-# 保存特征值到数据库
+# 保存特征值到人脸特征数据库的班级表下，直接插入新行，每个学号一行（修改）
 def features_sql(Sno, result):
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='face',
                            charset='utf8')
