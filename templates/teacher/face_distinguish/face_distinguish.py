@@ -2,6 +2,8 @@
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
 import json
+from static.face_module.features_distinguish import features_distinguish
+from templates.teacher.face_distinguish.student_number_matching_sql import student_number_matching_sql
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念
@@ -34,5 +36,22 @@ def face_distinguish_fun():
         #  设置HTTP状态码
         response.status_code = 401
     else:
-        pass
-    return ''
+        status, no = features_distinguish(get_data['class'] + get_data['classno'])
+        if status is True:
+            Sno = student_number_matching_sql(get_data['class'] + get_data['classno'], no)
+            post_data = {'info': '人脸识别成功，此学生学号为{}'.format(Sno)}
+            #  返回的内容
+            response = make_response(json.dumps(post_data))
+            #  返回的json格式设定
+            response.content_type = 'application/json'
+            #  设置HTTP状态码
+            response.status_code = 200
+        else:
+            post_data = {'info': '人脸识别识别，人脸库对比失败，请重试'}
+            #  返回的内容
+            response = make_response(json.dumps(post_data))
+            #  返回的json格式设定
+            response.content_type = 'application/json'
+            #  设置HTTP状态码
+            response.status_code = 401
+    return response
