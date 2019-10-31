@@ -2,17 +2,14 @@
 import dlib          # 人脸处理的库 Dlib
 import numpy as np   # 数据处理的库 numpy
 import cv2           # 图像处理的库 OpenCv
-import pandas as pd  # 数据处理的库 Pandas
 from skimage import io
+from test import get_student_info_sql
 
 # 人脸识别模型，提取128D的特征矢量
-# face recognition model, the object maps human faces into 128D vectors
-# Refer this tutorial: http://dlib.net/python/index.html#dlib.face_recognition_model_v1
 facerec = dlib.face_recognition_model_v1("data/data_dlib/dlib_face_recognition_resnet_model_v1.dat")
 
 
 # 计算两个128D向量间的欧式距离
-# compute the e-distance between two 128D features
 def return_euclidean_distance(feature_1, feature_2):
     feature_1 = np.array(feature_1)
     feature_2 = np.array(feature_2)
@@ -20,23 +17,8 @@ def return_euclidean_distance(feature_1, feature_2):
     return dist
 
 
-# 处理存放所有人脸特征的 csv
-path_features_known_csv = "data/data_faces_from_camera/features_all.csv"
-csv_rd = pd.read_csv(path_features_known_csv, header=None)
-
-
 # 用来存放所有录入人脸特征的数组
-features_known_arr = []
-
-
-# 读取已知人脸数据
-# print known faces
-for i in range(csv_rd.shape[0]):
-    features_someone_arr = []
-    for j in range(0, len(csv_rd.ix[i, :])):
-        features_someone_arr.append(csv_rd.ix[i, :][j])
-    features_known_arr.append(features_someone_arr)
-# features_known_arr 为一个数组嵌套数组，每个对象保存着每个人的128个特征，此数组长度为人脸个数
+features_known_arr = get_student_info_sql('计算机科学与技术162')
 print("数据库中人脸个数为", len(features_known_arr))
 
 

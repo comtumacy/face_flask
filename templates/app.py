@@ -23,6 +23,7 @@ from templates.student.get_face.features_train_person import features_train_pers
 from templates.student.get_face.find_features import find_features
 # teacher
 from templates.teacher.create_class.create_class import create_class
+from templates.teacher.face_distinguish.face_distinguish import face_distinguish
 
 # 设置SECRET_KEY为随机数
 app = Flask(__name__)
@@ -59,9 +60,9 @@ app.register_blueprint(find_features, url_prefix='/student')  # 查询是否该�
 # 个人考勤情况查询
 # 教师接口
 app.register_blueprint(create_class, url_prefix='/teacher')  # 创建班级
+app.register_blueprint(face_distinguish, url_prefix='/teacher')  # 人脸考勤
 # 班级考勤情况查询
 # 班级考勤数据修改
-# 人脸考勤
 
 
 if __name__ == '__main__':
