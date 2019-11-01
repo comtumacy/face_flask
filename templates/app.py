@@ -26,7 +26,8 @@ from templates.student.attendance_results.attendance_results import attendance_r
 from templates.teacher.create_class.create_class import create_class
 from templates.teacher.face_distinguish.face_distinguish import face_distinguish
 from templates.teacher.attendance_results_teacher.attendance_results_teacher import attendance_results_teacher
-from templates.teacher.modify_attendance.
+from templates.teacher.modify_attendance.modify_attendance import modify_attendance
+from templates.teacher.modify_attendance.get_modify_date import get_modify_date
 
 # 设置SECRET_KEY为随机数
 app = Flask(__name__)
@@ -65,7 +66,8 @@ app.register_blueprint(attendance_results, url_prefix='/student')  # 个人考�
 app.register_blueprint(create_class, url_prefix='/teacher')  # 创建班级
 app.register_blueprint(face_distinguish, url_prefix='/teacher')  # 人脸考勤
 app.register_blueprint(attendance_results_teacher, url_prefix='/teacher')  # 班级考勤情况查询
-# 班级考勤数据修改
+app.register_blueprint(modify_attendance, url_prefix='/teacher')  # 班级考勤数据修改
+app.register_blueprint(get_modify_date, url_prefix='/teacher')  # 获取班级考勤日期
 
 
 if __name__ == '__main__':

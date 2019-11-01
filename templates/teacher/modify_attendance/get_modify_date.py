@@ -6,11 +6,11 @@ from templates.teacher.modify_attendance.get_modify_date_sql import get_modify_d
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念
-modify_attendance = Blueprint("modify_attendance", __name__)
+get_modify_date = Blueprint("get_modify_date", __name__)
 
 
-@modify_attendance.route('/modify_attendance', methods=['POST', 'GET'])
-def modify_attendance_fun():
+@get_modify_date.route('/get_modify_date', methods=['POST', 'GET'])
+def get_modify_date_fun():
     # 获取头部信息
     Tno = request.headers.get('Tno')
     token = request.headers.get('token')
@@ -36,5 +36,12 @@ def modify_attendance_fun():
         response.status_code = 401
     else:
         all_list = get_modify_date_sql(get_data['class'] + get_data['classno'])
-        
+        if len(all_list) != 0:
+            post_data = {'info': ''}
+            #  返回的内容
+            response = make_response(json.dumps(post_data))
+            #  返回的json格式设定
+            response.content_type = 'application/json'
+            #  设置HTTP状态码
+            response.status_code = 401
     return ''
