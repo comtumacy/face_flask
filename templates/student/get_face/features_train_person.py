@@ -37,7 +37,7 @@ def features_train_person_fun():
         response.status_code = 401
     else:
         # linux (change this)
-        result = return_features_mean_person('static/photo/201606401243')
+        result = return_features_mean_person(Sno)
         status = features_sql(Sno, result, get_data['class'] + get_data['classno'])
         if status == 1:
             post_data = {'info': '128组人脸特征值训练保存成功'}

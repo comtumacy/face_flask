@@ -52,7 +52,8 @@ def return_128d_features(path_img):
 
 # 将文件夹中照片特征提取出来
 # path_faces_person为完整文件夹某人的照片文件夹路径
-def return_features_mean_person(path_faces_person):
+def return_features_mean_person(Sno):
+    path_faces_person = os.path.dirname(os.path.abspath(__file__)) + '/../photo/' + Sno
     features_list_person = []
     photos_list = os.listdir(path_faces_person)
     # photos_list为文件名，photo_list = ['img_face_1.jpg'...]
