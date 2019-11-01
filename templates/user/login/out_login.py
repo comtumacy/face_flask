@@ -13,7 +13,7 @@ def out_login_fun():
     get_data = request.json
     print('接收到的用户退出登录数据：{}'.format(get_data))
     redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
-    redis.set(get_data['Sno'], '')
+    redis.set(get_data['no'], '')
     #  退出登录信息返回前端
     post_data = {'info': '已经成功退出'}
     #  返回的内容

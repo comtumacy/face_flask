@@ -21,7 +21,7 @@ def login_fun():
     ctoken = request.headers.get('ctoken')
 
     # 获取code
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     code_get = redis.get(ctoken)
     code_get = str(code_get)
     code_get = code_get.replace("b'", "")
@@ -36,34 +36,48 @@ def login_fun():
         response.set_data(post_data)
         # 设置HTTP状态码
         response.status_code = 401
+        return response
     else:
         #  查询数据库
         status = login_sql(get_data['Sno'], get_data['username'], get_data['password'])
         #  查询结果返回前端
-        post_data = {'info': ''}
         if status == -1:
             post_data = {'info': '账号密码错误，请重新输入'}
+            #  返回的内容
+
+            response = make_response(json.dumps(post_data))
+            response.status_code = 401
+            #  返回的json格式设定
+
+            response.content_type = 'application/json'
+            return response
         elif status == 0:
             post_data = {'info': '无此学号，请重新输入'}
+            #  返回的内容
+            response = make_response(json.dumps(post_data))
+            response.status_code = 401
+            #  返回的json格式设定
+            response.content_type = 'application/json'
+            return response
         elif status == 1:
             post_data = {'info': '登录成功，欢迎{}用户'.format(get_data['username'])}
-        #  返回的内容
-        response = make_response(json.dumps(post_data))
-        #  设置headers
-        if status == 1:
-            redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+
+            #  返回的内容
+            response = make_response(json.dumps(post_data))
+            response.status_code = 200
+
+            #  返回的json格式设定
+            response.content_type = 'application/json'
+
+            #  连接Redis,设置token
+            redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
             expiration = 3600
             s = Serializer(redis.get('SECRET_KEY'), expires_in=expiration)  # expiration是过期时间
             token = s.dumps({'username': get_data['username'], 'password': get_data['password']})
             token = str(token, 'utf-8')
             redis.set(get_data['Sno'], token)
             redis.expire(str(get_data['Sno']), 3600)
+
+            #  设置headers
             response.headers = {'username': get_data['username'], 'token': token}
-        #  返回的json格式设定
-        response.content_type = 'application/json'
-        #  设置HTTP状态码
-        if status == 1:
-            response.status_code = 200
-        else:
-            response.status_code = 401
-    return response
+            return response

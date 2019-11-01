@@ -36,16 +36,24 @@ def register_fun():
         # 设置HTTP状态码
         response.status_code = 401
     else:
-        status1 = register_sql(data['Sno'], data['username'], data['password'], data['Sname'], data['Ssex'], data['Sclass'], data['Sclassno'], data['Sdept'])
-        status2 = insert_sql(data['Sno'], data['Sclass'] + data['Sclassno'])
-        if status1 == 1 & status2 == 1:
-            post_data = {"info": "注册成功"}
-            post_data = json.dumps(post_data)
-            response.set_data(post_data)
+        status = register_sql(data['Sno'], data['username'], data['password'], data['Sname'], data['Ssex'], data['Sclass'], data['Sclassno'], data['Sdept'])
+        if status == 1:
+            status = insert_sql(data['Sno'], data['Sclass'] + data['Sclassno'])
+            if status == 1:
+                post_data = {"info": "注册成功"}
+                post_data = json.dumps(post_data)
+                response.set_data(post_data)
+                response.status_code = 200
+            else:
+                post_data = {"info": "未知错误，请联系管理员"}
+                post_data = json.dumps(post_data)
+                response.set_data(post_data)
+                response.status_code = 401
         else:
             post_data = {"info": "学号或用户名已经存在"}
             post_data = json.dumps(post_data)
             response.set_data(post_data)
+            response.status_code = 401
     #  返回的json格式设定
     response.content_type = 'application/json'
     return response
