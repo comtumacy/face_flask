@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca039762-5d15-4547-839e-2f9dd2e526ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/face_module/features_distinguish.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/face_module/features_distinguish.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/features_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/face_module/features_extraction.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/face$features_distinguish.coverage" NAME="features_distinguish Coverage Results" MODIFIED="1572539099363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static/face_module" />
     <SUITE FILE_PATH="coverage/face$save_photo.coverage" NAME="save_photo Coverage Results" MODIFIED="1572336638153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/templates/student/get_face" />
-    <SUITE FILE_PATH="coverage/face$tornado_server.coverage" NAME="tornado_server Coverage Results" MODIFIED="1572568946934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/templates" />
+    <SUITE FILE_PATH="coverage/face$tornado_server.coverage" NAME="tornado_server Coverage Results" MODIFIED="1572612936867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/templates" />
     <SUITE FILE_PATH="coverage/face$get_faces_from_camera.coverage" NAME="get_faces_from_camera Coverage Results" MODIFIED="1572421006580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static/face_module" />
     <SUITE FILE_PATH="coverage/face$Flask__templates_app_py_.coverage" NAME="Flask (templates/app.py) Coverage Results" MODIFIED="1572575142371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/face$features_extraction_to_csv.coverage" NAME="features_extraction_to_csv Coverage Results" MODIFIED="1572399502090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static/face_module" />
@@ -29,58 +30,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/face_module/features_distinguish.py">
+        <entry file="file://$PROJECT_DIR$/templates/tornado_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="286">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="e#15#49#0" expanded="true" />
+                <element signature="e#37#75#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py">
+        <entry file="file://$PROJECT_DIR$/templates/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="34" column="16" lean-forward="true" selection-end-line="75" />
+            <state relative-caret-position="664">
+              <caret line="73" column="63" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="63" />
               <folding>
-                <element signature="e#15#66#0" expanded="true" />
+                <element signature="e#15#51#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/student/get_face/get_photo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="29" />
-              <folding>
-                <element signature="e#15#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/student/get_face/save_photo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="24" selection-start-line="6" selection-end-line="12" selection-end-column="22" />
-              <folding>
-                <element signature="e#15#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/save_get_photo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -148,7 +116,6 @@
         <option value="$PROJECT_DIR$/templates/teacher/face_distinguish/student_number_matching_sql.py" />
         <option value="$PROJECT_DIR$/templates/teacher/face_distinguish/attendance.py" />
         <option value="$PROJECT_DIR$/templates/teacher/face_distinguish/attendance_sql.py" />
-        <option value="$PROJECT_DIR$/static/face_module/features_extraction.py" />
         <option value="$PROJECT_DIR$/templates/teacher/create_class/content_replacement_after.py" />
         <option value="$PROJECT_DIR$/templates/teacher/create_class/content_replacement_before.py" />
         <option value="$PROJECT_DIR$/templates/teacher/create_class/create_atendance_table.py" />
@@ -164,10 +131,11 @@
         <option value="$PROJECT_DIR$/templates/teacher/modify_attendance/modify_attendance.py" />
         <option value="$PROJECT_DIR$/templates/teacher/modify_attendance/get_modify_date_sql.py" />
         <option value="$PROJECT_DIR$/templates/teacher/modify_attendance/get_modify_date.py" />
-        <option value="$PROJECT_DIR$/templates/app.py" />
         <option value="$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py" />
-        <option value="$PROJECT_DIR$/static/face_module/features_distinguish.py" />
         <option value="$PROJECT_DIR$/templates/teacher/face_distinguish/save_get_photo.py" />
+        <option value="$PROJECT_DIR$/static/face_module/features_extraction.py" />
+        <option value="$PROJECT_DIR$/static/face_module/features_distinguish.py" />
+        <option value="$PROJECT_DIR$/templates/app.py" />
       </list>
     </option>
   </component>
@@ -185,6 +153,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,12 +275,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python源程序" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../luohongsheng" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -344,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (templates/app.py)">
+  <component name="RunManager" selected="Python.tornado_server">
     <configuration name="create_features_table" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="face" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -465,8 +433,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Flask server.Flask (templates/app.py)" />
         <item itemvalue="Python.tornado_server" />
+        <item itemvalue="Flask server.Flask (templates/app.py)" />
         <item itemvalue="Python.features_distinguish" />
         <item itemvalue="Python.test (2)" />
         <item itemvalue="Python.create_features_table" />
@@ -503,16 +471,17 @@
       <workItem from="1572528480882" duration="14893000" />
       <workItem from="1572568846909" duration="7433000" />
       <workItem from="1572593521101" duration="5364000" />
+      <workItem from="1572609555317" duration="2062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95360000" />
+    <option name="totallyTimeSpent" value="97422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20842217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -553,16 +522,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/student/get_face/features_all.csv" />
-    <entry file="file://$PROJECT_DIR$/static/face_module/features_extraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2080">
-          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
-          <folding>
-            <element signature="e#15#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/public_api/get_class/get_class.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -733,13 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/tornado_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/student/get_face/features_sql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
@@ -826,16 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="e#15#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/student_number_matching_sql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -850,20 +792,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/attendance_sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/get_face/get_photo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#15#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/save_get_photo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/student/get_face/save_photo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="24" selection-start-line="6" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="312">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="e#15#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/get_face/get_photo.py">
+    <entry file="file://$PROJECT_DIR$/static/face_module/features_extraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="598">
+          <caret line="21" column="88" selection-start-line="21" selection-start-column="88" selection-end-line="21" selection-end-column="88" />
+          <folding>
+            <element signature="e#15#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-338">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#15#66#0" expanded="true" />
           </folding>
@@ -872,34 +848,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/face_module/features_distinguish.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="316">
+          <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
           <folding>
             <element signature="e#15#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/attendance_sql.py">
+    <entry file="file://$PROJECT_DIR$/templates/tornado_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/save_get_photo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="34" column="16" lean-forward="true" selection-end-line="75" />
+        <state relative-caret-position="286">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#15#66#0" expanded="true" />
+            <element signature="e#37#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="73" column="63" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="63" />
+          <folding>
+            <element signature="e#15#51#0" expanded="true" />
           </folding>
         </state>
       </provider>

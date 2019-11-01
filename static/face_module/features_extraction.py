@@ -15,11 +15,11 @@ import numpy as np
 detector = dlib.get_frontal_face_detector()
 
 # Dlib 人脸预测器
-predictor = dlib.shape_predictor("static/face_module/data/data_dlib/shape_predictor_5_face_landmarks.dat")
+predictor = dlib.shape_predictor(os.path.dirname(os.path.abspath(__file__)) + "/data/data_dlib/shape_predictor_5_face_landmarks.dat")
 
 # Dlib 人脸识别模型
 # Face recognition model, the object maps human faces into 128D vectors
-face_rec = dlib.face_recognition_model_v1("static/face_module/data/data_dlib/dlib_face_recognition_resnet_model_v1.dat")
+face_rec = dlib.face_recognition_model_v1(os.path.dirname(os.path.abspath(__file__)) + "/data/data_dlib/dlib_face_recognition_resnet_model_v1.dat")
 
 
 # 返回单张图像的 128D 特征

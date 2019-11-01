@@ -9,6 +9,21 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="liyitong@192.168.1.102:22 (1)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="luohongsheng">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/flask" local="$PROJECT_DIR$/../luohongsheng" web="/" />
+            <mapping local="" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
   </component>
 </project>

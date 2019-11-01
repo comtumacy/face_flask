@@ -20,12 +20,12 @@ def features_distinguish(table_name, Tno):
     print("数据库中人脸个数为", len(features_known_arr))
 
     # 人脸识别模型，提取128D的特征矢量
-    facerec = dlib.face_recognition_model_v1("static/face_module/data/data_dlib/dlib_face_recognition_resnet_model_v1.dat")
+    facerec = dlib.face_recognition_model_v1(os.path.dirname(os.path.abspath(__file__)) + "/data/data_dlib/dlib_face_recognition_resnet_model_v1.dat")
 
     # Dlib 检测器和预测器
     # The detector and predictor will be used
     detector = dlib.get_frontal_face_detector()
-    predictor = dlib.shape_predictor('static/face_module/data/data_dlib/shape_predictor_68_face_landmarks.dat')
+    predictor = dlib.shape_predictor(os.path.dirname(os.path.abspath(__file__)) + '/data/data_dlib/shape_predictor_68_face_landmarks.dat')
 
     # 读取单张彩色rgb图片,读取的图片以numpy数组形式计算
     img_rd = io.imread('D:\\face\\static\\photo\\teacher\\{}.jpg'.format(Tno))
