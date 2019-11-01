@@ -14,7 +14,7 @@ def return_euclidean_distance(feature_1, feature_2):
     return dist
 
 
-def features_distinguish(table_name):
+def features_distinguish(table_name, Tno):
     # 用来存放所有录入人脸特征的数组
     features_known_arr = get_student_features_sql(table_name)
     print("数据库中人脸个数为", len(features_known_arr))
@@ -28,7 +28,7 @@ def features_distinguish(table_name):
     predictor = dlib.shape_predictor('static/face_module/data/data_dlib/shape_predictor_68_face_landmarks.dat')
 
     # 读取单张彩色rgb图片,读取的图片以numpy数组形式计算
-    img_rd = io.imread("static/face_module/img_face_1.jpg")
+    img_rd = io.imread('D:\\face\\static\\photo\\teacher\\{}.jpg'.format(Tno))
     # cv2.cvtColor(p1,p2) 是颜色空间转换函数，p1是需要转换的图片，p2是转换成何种格式。
     # cv2.COLOR_BGR2RGB 将BGR格式转换成RGB格式
     img_gray = cv2.cvtColor(img_rd, cv2.COLOR_BGR2RGB)

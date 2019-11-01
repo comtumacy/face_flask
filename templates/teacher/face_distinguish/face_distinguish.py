@@ -6,6 +6,7 @@ import time
 from static.face_module.features_distinguish import features_distinguish
 from templates.teacher.face_distinguish.student_number_matching_sql import student_number_matching_sql
 from templates.teacher.face_distinguish.attendance_sql import attendance_sql
+from templates.teacher.face_distinguish.save_get_photo import save_get_photo
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念
@@ -38,11 +39,13 @@ def face_distinguish_fun():
         #  设置HTTP状态码
         response.status_code = 401
     else:
-        status, no = features_distinguish(get_data['class'] + get_data['classno'])
-        if status is True:
-            # a
+        # 保存图片
+        status_mkdir = save_get_photo(Tno, get_data['base64'])
+        status, no = features_distinguish(get_data['class'] + get_data['classno'], Tno)
+        if status is True and status_mkdir is True:
+            # 查询此学生学号
             Sno = student_number_matching_sql(get_data['class'] + get_data['classno'], no)
-            # a
+            # 获取当前日期，更改考勤数据库表
             date = time.strftime("%Y-%m-%d", time.localtime())
             status = attendance_sql(get_data['class'] + get_data['classno'], date, Sno)
             if status == 1:
