@@ -1,3 +1,4 @@
+# coding=utf-8
 # 导入windows使用的wsgi服务器
 from tornado.wsgi import WSGIContainer
 from tornado.httpserver import HTTPServer

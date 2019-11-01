@@ -21,9 +21,12 @@ from templates.student.get_face.get_student_info import get_student_info
 from templates.student.get_face.get_photo import get_photo
 from templates.student.get_face.features_train_person import features_train_person
 from templates.student.get_face.find_features import find_features
+from templates.student.attendance_results.attendance_results import attendance_results
 # teacher
 from templates.teacher.create_class.create_class import create_class
 from templates.teacher.face_distinguish.face_distinguish import face_distinguish
+from templates.teacher.attendance_results_teacher.attendance_results_teacher import attendance_results_teacher
+from templates.teacher.modify_attendance.
 
 # 设置SECRET_KEY为随机数
 app = Flask(__name__)
@@ -57,11 +60,11 @@ app.register_blueprint(get_student_info, url_prefix='/student')  # 获取当前�
 app.register_blueprint(get_photo, url_prefix='/student')  # 保存照片
 app.register_blueprint(features_train_person, url_prefix='/student')  # 获取保存人脸特征
 app.register_blueprint(find_features, url_prefix='/student')  # 查询是否该学生已经存在人脸特征
-# 个人考勤情况查询
+app.register_blueprint(attendance_results, url_prefix='/student')  # 个人考勤情况查询
 # 教师接口
 app.register_blueprint(create_class, url_prefix='/teacher')  # 创建班级
 app.register_blueprint(face_distinguish, url_prefix='/teacher')  # 人脸考勤
-# 班级考勤情况查询
+app.register_blueprint(attendance_results_teacher, url_prefix='/teacher')  # 班级考勤情况查询
 # 班级考勤数据修改
 
 
