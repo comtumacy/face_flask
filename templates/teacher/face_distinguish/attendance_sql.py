@@ -16,11 +16,11 @@ def attendance_sql(table_name, date, no):
             sql_create = 'INSERT INTO `{}` (`date`) VALUES ("{}")'.format(table_name, date)
             cursor.execute(sql_create)
             conn.commit()
-            sql1 = "update {} set `{}` = '{}' where `date` = '{}';".format(table_name, no, 1, date)
+            sql1 = "update {} set `{}` = '{}' where `date` = '{}';".format(table_name, no, '是', date)
             cursor.execute(sql1)
             conn.commit()
         else:
-            sql1 = "update {} set `{}` = '{}' where `date` = '{}';".format(table_name, no, 1, date)
+            sql1 = "update {} set `{}` = '{}' where `date` = '{}';".format(table_name, no, '是', date)
             cursor.execute(sql1)
             conn.commit()
         status = 1

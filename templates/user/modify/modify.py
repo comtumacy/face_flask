@@ -33,7 +33,7 @@ def modify_fun():
         response.status_code = 401
     else:
         data = request.json
-        status = register_sql(data['Sno'], data['username'], data['password'], data['Sname'], data['Ssex'], data['Sclass'], data['Birth'], data['Saddress'], data['Sdept'], data['Stime'])
+        status = register_sql(Sno, data['username'], data['password'], data['Sname'], data['Ssex'], data['Birth'], data['Saddress'], data['Stime'])
         if status == 1:
             #  设置响应体
             response = make_response()

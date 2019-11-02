@@ -14,9 +14,10 @@ def attendance_results_fun():
     # 获取头部信息
     Sno = request.headers.get('Sno')
     token = request.headers.get('token')
+    number = request.headers.get('number')
 
     # 获取token
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     token_get = redis.get(Sno)
     token_get = str(token_get)
     token_get = token_get.replace("b'", "")
@@ -35,9 +36,9 @@ def attendance_results_fun():
         #  设置HTTP状态码
         response.status_code = 401
     else:
-        all_list, status = attendance_results_sql(get_data['class'] + get_data['classno'], Sno)
+        all_list, status, page_number = attendance_results_sql(get_data['class'] + get_data['classno'], Sno, int(number) - 1)
         if status != 0:
-            post_data = {'data': all_list}
+            post_data = {'data': all_list, 'page_number': page_number}
             #  返回的内容
             response = make_response(json.dumps(post_data))
             #  返回的json格式设定

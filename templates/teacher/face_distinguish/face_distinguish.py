@@ -3,9 +3,13 @@ from flask import Blueprint, make_response, request
 from redis import StrictRedis
 import json
 import time
+# 人脸考勤
 from static.face_module.features_distinguish import features_distinguish
+# 使用返回的序号查询此学生学号
 from templates.teacher.face_distinguish.student_number_matching_sql import student_number_matching_sql
+# 写入考勤时间
 from templates.teacher.face_distinguish.attendance_sql import attendance_sql
+# 保存现在即时的照片
 from templates.teacher.face_distinguish.save_get_photo import save_get_photo
 
 
@@ -41,9 +45,10 @@ def face_distinguish_fun():
     else:
         # 保存图片
         status_mkdir = save_get_photo(Tno, get_data['base64'])
+        # 人脸考勤
         status, no = features_distinguish(get_data['class'] + get_data['classno'], Tno)
         if status is True and status_mkdir is True:
-            # 查询此学生学号
+            # 使用返回的序号查询此学生学号
             Sno = student_number_matching_sql(get_data['class'] + get_data['classno'], no)
             # 获取当前日期，更改考勤数据库表
             date = time.strftime("%Y-%m-%d", time.localtime())
