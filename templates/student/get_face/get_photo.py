@@ -1,7 +1,7 @@
 # coding=utf-8
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
-from templates.student.get_face.save_photo import save_photo
+from student.get_face.save_photo import save_photo
 import json
 
 
@@ -21,7 +21,7 @@ def get_photo_fun():
     number = request.headers.get('number')
 
     # 获取token
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     token_get = redis.get(Sno)
     token_get = str(token_get)
     token_get = token_get.replace("b'", "")

@@ -6,11 +6,11 @@ import time
 # 人脸考勤
 from static.face_module.features_distinguish import features_distinguish
 # 使用返回的序号查询此学生学号
-from templates.teacher.face_distinguish.student_number_matching_sql import student_number_matching_sql
+from teacher.face_distinguish.student_number_matching_sql import student_number_matching_sql
 # 写入考勤时间
-from templates.teacher.face_distinguish.attendance_sql import attendance_sql
+from teacher.face_distinguish.attendance_sql import attendance_sql
 # 保存现在即时的照片
-from templates.teacher.face_distinguish.save_get_photo import save_get_photo
+from teacher.face_distinguish.save_get_photo import save_get_photo
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念
@@ -24,7 +24,7 @@ def face_distinguish_fun():
     token = request.headers.get('token')
 
     # 获取token
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     token_get = redis.get(Tno)
     token_get = str(token_get)
     token_get = token_get.replace("b'", "")
@@ -44,10 +44,10 @@ def face_distinguish_fun():
         response.status_code = 401
     else:
         # 保存图片
-        status_mkdir = save_get_photo(Tno, get_data['base64'])
+        save_get_photo(Tno, get_data['base64'])
         # 人脸考勤
         status, no = features_distinguish(get_data['class'] + get_data['classno'], Tno)
-        if status is True and status_mkdir is True:
+        if status is True:
             # 使用返回的序号查询此学生学号
             Sno = student_number_matching_sql(get_data['class'] + get_data['classno'], no)
             # 获取当前日期，更改考勤数据库表

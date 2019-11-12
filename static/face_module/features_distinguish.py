@@ -2,8 +2,9 @@
 import dlib          # 人脸处理的库 Dlib
 import numpy as np   # 数据处理的库 numpy
 import cv2           # 图像处理的库 OpenCv
+import os
 from skimage import io
-from templates.teacher.face_distinguish.get_student_features_sql import get_student_features_sql
+from teacher.face_distinguish.get_student_features_sql import get_student_features_sql
 
 
 # 计算两个128D向量间的欧式距离
@@ -28,7 +29,9 @@ def features_distinguish(table_name, Tno):
     predictor = dlib.shape_predictor(os.path.dirname(os.path.abspath(__file__)) + '/data/data_dlib/shape_predictor_68_face_landmarks.dat')
 
     # 读取单张彩色rgb图片,读取的图片以numpy数组形式计算
-    img_rd = io.imread('D:\\face\\static\\photo\\teacher\\{}.jpg'.format(Tno))
+    path_faces_person = os.path.dirname(os.path.abspath(__file__)) + '/../../static/photo/teacher/' + Tno
+    photos_list = os.listdir(path_faces_person)
+    img_rd = io.imread(path_faces_person + "/" + photos_list[0])
     # cv2.cvtColor(p1,p2) 是颜色空间转换函数，p1是需要转换的图片，p2是转换成何种格式。
     # cv2.COLOR_BGR2RGB 将BGR格式转换成RGB格式
     img_gray = cv2.cvtColor(img_rd, cv2.COLOR_BGR2RGB)
@@ -41,8 +44,8 @@ def features_distinguish(table_name, Tno):
         # 获取当前捕获到的图像的所有人脸的特征，存储到 features_cap_arr
         features_cap_arr = []
         for i in range(len(faces)):
-            shape = predictor(img_rd, faces[i])
-            features_cap_arr.append(facerec.compute_face_descriptor(img_rd, shape))
+            shape = predictor(img_gray, faces[i])
+            features_cap_arr.append(facerec.compute_face_descriptor(img_gray, shape))
 
         # 遍历捕获到的图像中所有的人脸
         for k in range(len(faces)):
@@ -64,4 +67,6 @@ def features_distinguish(table_name, Tno):
                 if min(e_distance_list) < 0.4:
                     return True, int(similar_person_num) + 1
                 else:
-                    return False, int(similar_person_num) + 1
+                    return False, 0
+    else:
+        return False, 0

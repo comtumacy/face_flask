@@ -2,7 +2,7 @@
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
 import json
-from templates.student.get_face.get_student_info_sql import get_student_info_sql
+from student.get_face.get_student_info_sql import get_student_info_sql
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念
@@ -16,7 +16,7 @@ def get_student_info_fun():
     token = request.headers.get('token')
 
     # 获取token
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     token_get = redis.get(Sno)
     token_get = str(token_get)
     token_get = token_get.replace("b'", "")

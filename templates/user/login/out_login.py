@@ -12,7 +12,7 @@ def out_login_fun():
     #  获取接收的账号密码信息，转为dict格式
     get_data = request.json
     print('接收到的用户退出登录数据：{}'.format(get_data))
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     redis.set(get_data['no'], '')
     #  退出登录信息返回前端
     post_data = {'info': '已经成功退出'}

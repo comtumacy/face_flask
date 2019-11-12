@@ -1,8 +1,8 @@
 # coding=utf-8
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
-from templates.user.register.register_sql import register_sql
-from templates.user.register.insert_sql import insert_sql
+from user.register.register_sql import register_sql
+from user.register.insert_sql import insert_sql
 import json
 
 
@@ -19,7 +19,7 @@ def register_fun():
     ctoken = request.headers.get('ctoken')
 
     # 获取code
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     code_get = redis.get(ctoken)
     code_get = str(code_get)
     code_get = code_get.replace("'", "")

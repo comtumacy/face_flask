@@ -1,6 +1,6 @@
 # coding=utf-8
 from flask import Blueprint, make_response, request
-from templates.user.login.login_sql import login_sql
+from user.login.login_sql import login_sql
 from redis import StrictRedis
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 import json

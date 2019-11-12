@@ -2,7 +2,7 @@
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
 import json
-from templates.student.attendance_results.attendance_results_sql import attendance_results_sql
+from student.attendance_results.attendance_results_sql import attendance_results_sql
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念

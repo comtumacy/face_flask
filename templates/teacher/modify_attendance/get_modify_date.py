@@ -2,7 +2,7 @@
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
 import json
-from templates.teacher.modify_attendance.get_modify_date_sql import get_modify_date_sql
+from teacher.modify_attendance.get_modify_date_sql import get_modify_date_sql
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念
@@ -16,7 +16,7 @@ def get_modify_date_fun():
     token = request.headers.get('token')
 
     # 获取token
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     token_get = redis.get(Tno)
     token_get = str(token_get)
     token_get = token_get.replace("b'", "")
@@ -37,11 +37,19 @@ def get_modify_date_fun():
     else:
         all_list = get_modify_date_sql(get_data['class'] + get_data['classno'])
         if len(all_list) != 0:
-            post_data = {'info': ''}
+            post_data = all_list
+            #  返回的内容
+            response = make_response(json.dumps(post_data))
+            #  返回的json格式设定
+            response.content_type = 'application/json'
+            #  设置HTTP状态码
+            response.status_code = 200
+        else:
+            post_data = {'info': '查询失败'}
             #  返回的内容
             response = make_response(json.dumps(post_data))
             #  返回的json格式设定
             response.content_type = 'application/json'
             #  设置HTTP状态码
             response.status_code = 401
-    return ''
+    return response

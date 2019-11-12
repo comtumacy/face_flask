@@ -5,7 +5,7 @@ import base64
 
 def save_photo(Sno, number, base64_str):
     # 创建用户文件夹(linux change)
-    path = 'D:\\face\\static\\photo\\{}'.format(Sno)
+    path = '/home/flask/static/photo/{}'.format(Sno)
     is_exists = os.path.exists(path)
     if is_exists:
         pass
@@ -16,7 +16,7 @@ def save_photo(Sno, number, base64_str):
     status = 0
     try:
         img = base64.b64decode(base64_str)
-        file = open('D:\\face\\static\\photo\\{}\\{}.jpg'.format(Sno, number), 'wb')
+        file = open('/home/flask/static/photo/{}/{}.jpg'.format(Sno, number), 'wb')
         file.write(img)
         file.close()
         status = 1

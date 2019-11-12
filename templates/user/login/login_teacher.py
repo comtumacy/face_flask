@@ -1,6 +1,6 @@
 # coding=utf-8
 from flask import Blueprint, make_response, request
-from templates.user.login.login_teacher_sql import login_sql
+from user.login.login_teacher_sql import login_sql
 from redis import StrictRedis
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 import json
@@ -88,5 +88,4 @@ def login_teacher_fun():
             redis.expire(str(get_data['Tno']), 3600)
             #  设置headers
             response.headers = {'username': get_data['username'], 'token': token}
-
             return response

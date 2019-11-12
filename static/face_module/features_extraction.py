@@ -14,6 +14,7 @@ import numpy as np
 # 返回值：默认的人脸检测器
 detector = dlib.get_frontal_face_detector()
 
+# f = open(os.path.dirname(os.path.abspath(__file__)) + '/test.txt')
 # Dlib 人脸预测器
 predictor = dlib.shape_predictor(os.path.dirname(os.path.abspath(__file__)) + "/data/data_dlib/shape_predictor_5_face_landmarks.dat")
 

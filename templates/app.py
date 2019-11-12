@@ -6,28 +6,28 @@ import os
 
 # 导入蓝图子模块
 # public
-from templates.public_api.get_college.get_college import get_college
-from templates.public_api.get_class.get_class import get_class
+from public_api.get_college.get_college import get_college
+from public_api.get_class.get_class import get_class
 # user
-from templates.user.login.login import login
-from templates.user.login.login_teacher import login_teacher
-from templates.user.login.out_login import out_login
-from templates.user.register.register import register
-from templates.user.register.verification_code.verification_code import verification_code
-from templates.user.modify.modify import modify
-from templates.user.modify.modify_teacher import modify_teacher
+from user.login.login import login
+from user.login.login_teacher import login_teacher
+from user.login.out_login import out_login
+from user.register.register import register
+from user.register.verification_code.verification_code import verification_code
+from user.modify.modify import modify
+from user.modify.modify_teacher import modify_teacher
 # student
-from templates.student.get_face.get_student_info import get_student_info
-from templates.student.get_face.get_photo import get_photo
-from templates.student.get_face.features_train_person import features_train_person
-from templates.student.get_face.find_features import find_features
-from templates.student.attendance_results.attendance_results import attendance_results
+from student.get_face.get_student_info import get_student_info
+from student.get_face.get_photo import get_photo
+from student.get_face.features_train_person import features_train_person
+from student.get_face.find_features import find_features
+from student.attendance_results.attendance_results import attendance_results
 # teacher
-from templates.teacher.create_class.create_class import create_class
-from templates.teacher.face_distinguish.face_distinguish import face_distinguish
-from templates.teacher.attendance_results_teacher.attendance_results_teacher import attendance_results_teacher
-from templates.teacher.modify_attendance.modify_attendance import modify_attendance
-from templates.teacher.modify_attendance.get_modify_date import get_modify_date
+from teacher.create_class.create_class import create_class
+from teacher.face_distinguish.face_distinguish import face_distinguish
+from teacher.attendance_results_teacher.attendance_results_teacher import attendance_results_teacher
+from teacher.modify_attendance.modify_attendance import modify_attendance
+from teacher.modify_attendance.get_modify_date import get_modify_date
 
 # 设置SECRET_KEY为随机数
 app = Flask(__name__)
@@ -35,7 +35,7 @@ app.config["SECRET_KEY"] = os.urandom(24)
 appContent = app.app_context()
 appContent.push()
 # 将SECRET_KEY存入Redis数据库
-redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
 redis.set('SECRET_KEY', current_app.config['SECRET_KEY'])
 appContent.pop()
 
@@ -71,5 +71,5 @@ app.register_blueprint(get_modify_date, url_prefix='/teacher')  # 获取班级�
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=False, processes=3)  # 0.0.0.0用于外部域访问
+    app.run(host='172.17.0.3', port=5000, debug=False)  # 0.0.0.0用于外部域访问
 

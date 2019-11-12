@@ -1,6 +1,6 @@
 # coding=utf-8
 from flask import Blueprint, make_response
-from templates.user.register.verification_code.get_verification_code_base64 import get_verification_code_base64
+from user.register.verification_code.get_verification_code_base64 import get_verification_code_base64
 from redis import StrictRedis
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 import json
@@ -17,7 +17,7 @@ def get_base_code():
     base_str, code = get_verification_code_base64()
     print(code)
     # 获取SECRET_KEY
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     secret_key = redis.get('SECRET_KEY')
 
     # 生成ctoken， 120s后过期

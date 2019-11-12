@@ -2,10 +2,10 @@
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
 import json
-from templates.teacher.create_class.find_is_exist_sql import find_is_exist_sql
-from templates.teacher.create_class.insert_class_to_class import insert_class_to_class
-from templates.teacher.create_class.create_features_table import connect_mysql
-from templates.teacher.create_class.create_atendance_table import connect_mysql2
+from teacher.create_class.find_is_exist_sql import find_is_exist_sql
+from teacher.create_class.insert_class_to_class import insert_class_to_class
+from teacher.create_class.create_features_table import connect_mysql
+from teacher.create_class.create_atendance_table import connect_mysql2
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念
@@ -19,7 +19,7 @@ def create_class_fun():
     token = request.headers.get('token')
 
     # 获取token
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     token_get = redis.get(Tno)
     token_get = str(token_get)
     token_get = token_get.replace("b'", "")

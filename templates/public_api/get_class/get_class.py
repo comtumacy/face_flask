@@ -1,6 +1,6 @@
 # coding=utf-8
 from flask import Blueprint, make_response, request
-from templates.public_api.get_class.get_class_sql import get_class_sql
+from public_api.get_class.get_class_sql import get_class_sql
 import json
 
 

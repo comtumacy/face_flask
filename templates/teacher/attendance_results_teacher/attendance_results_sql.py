@@ -2,12 +2,12 @@
 import pymysql
 
 
-def attendance_results_sql(table_name):
+def attendance_results_sql(table_name, date):
     conn = pymysql.connect(host='106.54.119.102', port=2707, user='root', password='Luohongsheng336!', db='attendance',
                            charset='utf8')
     try:
         cursor = conn.cursor()
-        sql1 = "SELECT * FROM `{}`;".format(table_name)
+        sql1 = "SELECT * FROM `{}` WHERE date = '{}';".format(table_name, date)
         sql2 = "SHOW full COLUMNS FROM `{}`".format(table_name)
         cursor.execute(sql1)
         conn.commit()

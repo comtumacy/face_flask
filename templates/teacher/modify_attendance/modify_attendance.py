@@ -2,7 +2,7 @@
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
 import json
-from templates.teacher.modify_attendance.modify_attendance_sql import modify_attendance_sql
+from teacher.modify_attendance.modify_attendance_sql import modify_attendance_sql
 
 
 # 创建一个蓝图的对象，蓝图就是一个小模块的概念
@@ -16,7 +16,7 @@ def modify_attendance_fun():
     token = request.headers.get('token')
 
     # 获取token
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     token_get = redis.get(Tno)
     token_get = str(token_get)
     token_get = token_get.replace("b'", "")
@@ -35,8 +35,8 @@ def modify_attendance_fun():
         #  设置HTTP状态码
         response.status_code = 401
     else:
-        if get_data['sign'] == '1' or get_data['sign'] == '0':
-            status = modify_attendance_sql(get_data['table_name'], get_data['Sno'], get_data['sign'], get_data['date'])
+        if get_data['sign'] == '是' or get_data['sign'] == '否':
+            status = modify_attendance_sql(get_data['class'] + get_data['classno'], get_data['Sno'], get_data['sign'], get_data['date'])
             if status == 1:
                 post_data = {'info': '修改成功'}
                 #  返回的内容

@@ -2,13 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca039762-5d15-4547-839e-2f9dd2e526ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/features_all.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_1/img_face_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/features_distinguish.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/face_module/features_distinguish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/face_module/features_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/static/face_module/features_extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public_api/get_class/get_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/public_api/get_class/get_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/public_api/get_college/get_college.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/public_api/get_college/get_college.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/student/attendance_results/attendance_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/attendance_results/attendance_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/attendance_results/attendance_results_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/attendance_results/attendance_results_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/get_face/features_train_person.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/get_face/features_train_person.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/get_face/find_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/get_face/find_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/get_face/get_photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/get_face/get_photo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/get_face/get_student_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/get_face/get_student_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/get_face/save_photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/get_face/save_photo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/attendance_results_teacher/attendance_results_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/attendance_results_teacher/attendance_results_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/attendance_results_teacher/attendance_results_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/attendance_results_teacher/attendance_results_teacher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/create_class/create_atendance_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/create_class/create_atendance_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/create_class/create_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/create_class/create_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/create_class/create_features_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/create_class/create_features_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/create_class/sql/Features.sql" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/create_class/sql/Features.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/create_class/sql/attendance.sql" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/create_class/sql/attendance.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/teacher/face_distinguish/attendance_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/face_distinguish/attendance_sql.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/face_distinguish/save_get_photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/face_distinguish/save_get_photo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/face_distinguish/student_number_matching_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/face_distinguish/student_number_matching_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/modify_attendance/get_modify_date.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/modify_attendance/get_modify_date.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/modify_attendance/modify_attendance.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/modify_attendance/modify_attendance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher/modify_attendance/modify_attendance_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher/modify_attendance/modify_attendance_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/login/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/login/login_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login/login_teacher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/login/out_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login/out_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/modify/modify.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/modify/modify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/modify/modify_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/modify/modify_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/modify/modify_teacher.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/modify/modify_teacher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/register/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/register/verification_code/verification_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register/verification_code/verification_code.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +120,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="52">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/face_module/features_distinguish.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/user/register/verification_code/verification_code.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+              <folding>
+                <element signature="e#15#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/user/register/verification_code/get_verification_code_base64.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#15#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/student/attendance_results/attendance_results_sql.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/user/login/login.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1976">
+              <caret line="80" column="16" selection-start-line="80" selection-start-column="12" selection-end-line="81" selection-end-column="81" />
+              <folding>
+                <element signature="e#15#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/tornado_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#37#75#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,7 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/teacher/create_class/find_is_exist_sql.py" />
         <option value="$PROJECT_DIR$/templates/teacher/create_class/insert_classno_to_class.py" />
         <option value="$PROJECT_DIR$/Features.sql" />
         <option value="$PROJECT_DIR$/templates/teacher/create_class/Features.sql" />
@@ -112,7 +263,6 @@
         <option value="$PROJECT_DIR$/templates/teacher/modify_attendance/get_modify_date.py" />
         <option value="$PROJECT_DIR$/templates/teacher/face_distinguish/save_get_photo.py" />
         <option value="$PROJECT_DIR$/static/face_module/features_distinguish.py" />
-        <option value="$PROJECT_DIR$/templates/app.py" />
         <option value="$PROJECT_DIR$/templates/user/register/register.py" />
         <option value="$PROJECT_DIR$/templates/user/login/login.py" />
         <option value="$PROJECT_DIR$/templates/user/login/login_teacher.py" />
@@ -125,6 +275,8 @@
         <option value="$PROJECT_DIR$/templates/student/attendance_results/attendance_results_sql.py" />
         <option value="$PROJECT_DIR$/templates/user/modify/modify_sql.py" />
         <option value="$PROJECT_DIR$/templates/user/modify/modify.py" />
+        <option value="$PROJECT_DIR$/templates/app.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions" />
       </list>
     </option>
   </component>
@@ -141,6 +293,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,16 +418,24 @@
               <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="register" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="face" type="b2602c69:ProjectViewProjectNode" />
+              <item name="face" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="verification_code" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue/maparcgis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -307,7 +468,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tornado_server">
+  <component name="RunManager" selected="Flask server.Flask (templates/app.py)">
     <configuration name="create_features_table" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="face" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -428,8 +589,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tornado_server" />
         <item itemvalue="Flask server.Flask (templates/app.py)" />
+        <item itemvalue="Python.tornado_server" />
         <item itemvalue="Python.features_distinguish" />
         <item itemvalue="Python.test (2)" />
         <item itemvalue="Python.create_features_table" />
@@ -469,18 +630,28 @@
       <workItem from="1572609555317" duration="2062000" />
       <workItem from="1572616049585" duration="9262000" />
       <workItem from="1572631233406" duration="117000" />
-      <workItem from="1572662778324" duration="4664000" />
+      <workItem from="1572662778324" duration="6900000" />
+      <workItem from="1572937594458" duration="280000" />
+      <workItem from="1572958222801" duration="541000" />
+      <workItem from="1572958784299" duration="64000" />
+      <workItem from="1572961736113" duration="1689000" />
+      <workItem from="1573027748033" duration="2539000" />
+      <workItem from="1573046916739" duration="11000" />
+      <workItem from="1573046939065" duration="3000" />
+      <workItem from="1573052326538" duration="19000" />
+      <workItem from="1573475486827" duration="21000" />
+      <workItem from="1573529393484" duration="638000" />
+      <workItem from="1573533169129" duration="468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111465000" />
+    <option name="totallyTimeSpent" value="119974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21695095" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24360341" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -507,27 +678,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/face$Flask__templates_app_py_.coverage" NAME="Flask (templates/app.py) Coverage Results" MODIFIED="1572958242163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/person_2/img_face_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/photo/test/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/face_module/data/data_faces_from_camera/features_all.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/student/get_face/features_all.csv" />
-    <entry file="file://$PROJECT_DIR$/templates/public_api/get_class/get_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding>
-            <element signature="e#15#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/public_api/get_class/get_class_sql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -657,16 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teacher/attendance_results_teacher/attendance_results_teacher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#15#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/teacher/modify_attendance/modify_attendance_sql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -715,30 +860,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/tornado_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#37#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/user/register/register.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/login/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-948">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="e#15#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,13 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/face_module/features_distinguish.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/student_number_matching_sql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -834,23 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="18" column="91" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="28" />
-          <folding>
-            <element signature="e#15#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/attendance_results/attendance_results_sql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -878,10 +979,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/teacher/attendance_results_teacher/attendance_results_teacher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#15#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions" />
+    <entry file="file://$PROJECT_DIR$/templates/teacher/face_distinguish/face_distinguish.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#15#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/public_api/get_class/get_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <element signature="e#15#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="52">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/attendance_results/attendance_results_sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/login/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1976">
+          <caret line="80" column="16" selection-start-line="80" selection-start-column="12" selection-end-line="81" selection-end-column="81" />
+          <folding>
+            <element signature="e#15#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/tornado_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#37#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/face_module/features_distinguish.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/register/verification_code/get_verification_code_base64.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#15#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/register/verification_code/verification_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+          <folding>
+            <element signature="e#15#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

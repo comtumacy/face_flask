@@ -1,7 +1,7 @@
 # coding=utf-8
 from flask import Blueprint, make_response, request
 from redis import StrictRedis
-from templates.user.modify.modify_teacher_sql import register_sql
+from user.modify.modify_teacher_sql import register_sql
 import json
 
 
@@ -16,7 +16,7 @@ def modify_teacher_fun():
     token = request.headers.get('token')
 
     # 获取code
-    redis = StrictRedis(host='localhost', port=6379, db=0, password='Liyitong97!')
+    redis = StrictRedis(host='localhost', port=6379, db=0, password='Luohongsheng336!')
     token_get = redis.get(str(Tno))
     token_get = str(token_get)
     token_get = token_get.replace("b'", "")
